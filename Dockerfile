@@ -21,7 +21,7 @@ COPY config.json /etc/v2ray/config.json
 COPY docker-entrypoint.sh /entrypoint.sh
 
 ENV PATH /usr/bin/v2ray:$PATH
-ENV PORT 80
+ENV PORT 8080
 ENV WSPATH /
 
 EXPOSE $PORT/tcp
