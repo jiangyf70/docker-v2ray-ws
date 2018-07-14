@@ -9,7 +9,7 @@ UUID=$(cat UUID)
 # Set config.json
 sed -i "s/PORT/$PORT/g" /etc/v2ray/config.json
 sed -i "s/UUID/$UUID/g" /etc/v2ray/config.json
-sed -i "s/WSPATH/$WSPATH/g" /etc/v2ray/config.json
+sed -i "s#WSPATH#$WSPATH#g" /etc/v2ray/config.json
 
 echo starting v2ray platform
 echo starting with UUID:$UUID
