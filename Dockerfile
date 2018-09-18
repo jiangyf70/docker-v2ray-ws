@@ -1,5 +1,5 @@
 #
-# Dockerfile for v2ray
+# Dockerfile for v2ray with WebSocket
 #
 
 FROM ubuntu:latest as builder
