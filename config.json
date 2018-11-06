@@ -1,22 +1,26 @@
 {
    "log":{
+      "access":"/var/log/v2ray/access.log",
+      "error":"/var/log/v2ray/error.log",
       "loglevel":"warning"
    },
    "inbound":{
-      "port":8080,
+      "port":PORT,
       "protocol":"vmess",
       "settings":{
          "clients":[
             {
-               "id":"c2d4a52f-067c-4c3f-8dcc-efc36069f127",
-               "alterId":64,
-               "security": "aes-128-gcm"
+               "id":"UUID",
+               "level":1,
+               "alterId":64
             }
          ]
       },
       "streamSettings":{
          "network":"ws",
-
+         "wsSettings":{
+            "path":"WSPATH"
+         }
       }
    },
    "outbound":{
